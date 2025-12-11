@@ -283,8 +283,8 @@ margin-bottom: 1.56rem;
 }
 
 .setsumeikai-date {
-font-size: 28px;
-font-weight: 600;
+font-size: 1.7em;
+font-weight: 500;
 color: #333;
 margin: 0;
 }
@@ -410,10 +410,10 @@ height: 21px;
 }
 
   .hero-rent {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
-  } */
+  } 
 
   .rent-note {
     font-size: 0.85rem;
@@ -426,8 +426,12 @@ height: 21px;
   }
 
   .hero-badge img {
-    width: 6rem;
+    width: 9rem;
   }
+  .setsumeikai-date {
+    font-size: 1.3em;
+    font-weight: 500;
+    }
 }
 
 

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:ThreePoints */
+#section-three-points {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #ffffff;
+}
+
+.points-container {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 54px;
+}
+
+.point-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* Ensure cards don't get too narrow before breaking */
+  min-width: 280px;
+}
+
+.card-header {
+  background-color: #3d966c;
+  height: 186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+}
+
+.en-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.jp-subtitle {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.card-body {
+  margin-top: 15px;
+}
+
+.card-text {
+  color: #3d966c;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+  text-align: justify;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .points-container {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .points-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .point-card {
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .card-header {
+    height: 150px;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-three-points">
+  <div class="points-container">
+    
+    <!-- Card 1: Living -->
+    <article class="point-card">
+      <div class="card-header">
+        <h2 class="en-title">Living</h2>
+        <span class="jp-subtitle">{ 暮らす }</span>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          創作活動が軌道に乗るまでのスタートアップ支援として、リーズナブルな家賃で住環境を提供します。クリエーターの経済的負担を軽減し、創作活動に打ち込むことができる環境を提供します。
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 2: Creating -->
+    <article class="point-card">
+      <div class="card-header">
+        <h2 class="en-title">Creating</h2>
+        <span class="jp-subtitle">{ つくる }</span>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          クリエーターに一定の創作活動が可能な環境を提供するほか、入居者同士や地域住民との交流を通じた、新たな価値を創造する「きっかけ」となる場を提供します。
+        </p>
+      </div>
+    </article>
+
+    <!-- Card 3: Connecting -->
+    <article class="point-card">
+      <div class="card-header">
+        <h2 class="en-title">Connecting</h2>
+        <span class="jp-subtitle">{ つながる }</span>
+      </div>
+      <div class="card-body">
+        <p class="card-text">
+          クリエーターや地域住民、ボランティアなど「人と人」「人と地域」がつながり、交流する場として、併設の地域交流施設を中心に「地域の縁側」のような居心地の良い空間を、居住者と地域住民に提供します。
+        </p>
+      </div>
+    </article>
+
+  </div>
+</section>
+</body>
+</html>

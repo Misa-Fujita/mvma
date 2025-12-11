@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Outline */
+.outline-section {
+  width: 100%;
+  padding: 60px 20px;
+  background-color: #fff;
+  color: #3d966c;
+}
+
+.outline-container {
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+/* Header Styles */
+.outline-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.header-en {
+  display: block;
+  font-size: 1.25rem; /* ~20px */
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.header-line {
+  width: 150px;
+  height: 3px;
+  background-color: #3d966c;
+  margin: 0 auto 20px;
+}
+
+.header-jp {
+  font-size: 2.5rem; /* ~40px */
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Table Styles */
+.outline-table {
+  border-top: 2.5px solid #3d966c;
+  display: flex;
+  flex-direction: column;
+}
+
+.outline-row {
+  display: flex;
+  border-bottom: 2.5px solid #3d966c;
+  padding: 25px 0;
+}
+
+.row-label {
+  width: 200px;
+  flex-shrink: 0;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Vertical Divider Line */
+.row-label::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 5px;
+  bottom: 5px;
+  width: 2.5px;
+  background-color: #3d966c;
+}
+
+.row-content {
+  flex-grow: 1;
+  padding-left: 40px;
+  padding-right: 20px;
+  white-space: pre-wrap; /* Preserves newlines from JSON */
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .outline-row {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .row-label {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .row-label::after {
+    display: none; /* Remove vertical line on mobile */
+  }
+
+  .row-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .header-jp {
+    font-size: 2rem;
+  }
+}
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-outline" class="outline-section">
+  <div class="outline-container">
+    <div class="outline-header">
+      <span class="header-en">OUTLINE</span>
+      <div class="header-line"></div>
+      <h2 class="header-jp">物件概要</h2>
+    </div>
+
+    <div class="outline-table">
+      <!-- Row 1: Name -->
+      <div class="outline-row">
+        <div class="row-label">名称</div>
+        <div class="row-content">三鷹ヴィレッジ・森のアトリエ</div>
+      </div>
+
+      <!-- Row 2: Address -->
+      <div class="outline-row">
+        <div class="row-label">住所</div>
+        <div class="row-content">三鷹市下連雀一丁目31番21号・22号</div>
+      </div>
+
+      <!-- Row 3: Type -->
+      <div class="outline-row">
+        <div class="row-label">種類</div>
+        <div class="row-content">シェアハウス　全６室（全３棟－各棟２室※１室は１名のみ）</div>
+      </div>
+
+      <!-- Row 4: Station -->
+      <div class="outline-row">
+        <div class="row-label">最寄駅</div>
+        <div class="row-content">JR中央線三鷹駅徒歩15分、<br>JR中央線吉祥寺駅・京王井の頭線吉祥寺駅徒歩17分</div>
+      </div>
+
+      <!-- Row 5: Rent -->
+      <div class="outline-row">
+        <div class="row-label">家賃等</div>
+        <div class="row-content">家　賃　27,000円～30,000円
+共益費　13,000円（水道光熱水費・インターネット利用料含む）
+※2026年4月分の家賃・共益費は無料
+保証金　30,000円（退去時にクリーニング費用として全額償却）
+敷金・礼金　なし
+仲介手数料　なし（貸主が負担）</div>
+      </div>
+
+      <!-- Row 6: Facilities -->
+      <div class="outline-row">
+        <div class="row-label">主な設備</div>
+        <div class="row-content">共用部（各棟共通）：創作活動室、キッチン、浴室、温水洗浄トイレ、エアコン、照明器具、冷蔵庫、洗濯乾燥機、電子レンジ、インターネット（Wi- fi）
+専有個室（共通）：鍵、クローゼット、エアコン、照明器具、ベッド、デスク、イス、
+インターネット（Wi- fi）
+駐輪場（共通）：敷地内利用可（無料）
+駐車場（共通）：なし</div>
+      </div>
+
+      <!-- Row 7: Contract -->
+      <div class="outline-row">
+        <div class="row-label">契約形態</div>
+        <div class="row-content">定期借家契約（３年間）
+※契約期間満了後は、更新なく契約が終了します。なお、ヒアリング審査・貸主借主協議の上、
+　１回に限り再契約が可能です。</div>
+      </div>
+
+      <!-- Row 8: Move-in Date -->
+      <div class="outline-row">
+        <div class="row-label">入居可能日</div>
+        <div class="row-content">2026年4月18日(土)～2026年5月31日までの期間中に入居</div>
+      </div>
+
+      <!-- Row 9: Notes -->
+      <div class="outline-row">
+        <div class="row-label">特記事項</div>
+        <div class="row-content">１部屋に１人のみ入居可能
+１棟につき２人（２部屋）が入居</div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

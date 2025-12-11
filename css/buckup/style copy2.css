@@ -1,0 +1,2491 @@
+/* ====================================
+  CSS for section section:Header
+==================================== */
+
+#section-header {
+  width: 100%;
+  background-color: transparent;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3.75em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(0.3125em);
+  transition: background-color 0.3s ease;
+}
+
+#section-header.scrolled {
+background-color: rgba(255, 255, 255, 0.56); 
+}
+
+.site-header {
+  width: 100%;
+}
+
+.header-logo{
+  position: static;
+  left: 0.1rem;
+  top: 1.43rem;
+  flex-shrink: 0;
+}
+
+.header-logo img {
+  width: 12rem;
+  height: auto;
+  object-fit: contain;
+}
+
+.header-nav {
+  /* position: absolute; */
+  right: 1rem;
+  top: 1.43rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+.nav-item a {
+  display: block;
+  font-family: 'Noto Sans JP';
+  font-size: 0.8em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #646464;
+  padding: 0 0.9em 0;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.nav-item a:hover {
+  color: #a9a9a9;
+}
+
+.nav-item a:active {
+  color: #a9a9a9;
+}
+
+.header-inner {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  position: relative;
+  padding: 0 1.25rem;
+}
+
+/* ハンバーガー基本 */
+.hamburger {
+  display: none;
+  width: 2rem;
+  height: 1.6rem;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  position: absolute;
+  right: 1.4rem;
+  top: 1.2rem;
+  z-index: 200;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #3d966c;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Responsive - hamburger */
+@media (max-width: 768px) {
+
+  /* ヘッダー全体 */
+  #section-header {
+    height: 4.5rem;
+    padding: 0 1rem;
+  }
+
+  /* 内部レイアウトの基準 */
+  .header-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between !important; 
+    align-items: center;
+    padding: 0;  
+  }
+
+  /* ロゴは左端固定 */
+ .header-logo {
+    position: static;
+    margin: 0;
+  }
+
+  /* ハンバーガーは右端に絶対配置 */
+  .hamburger {
+    position: absolute;
+    top: 0.1rem;
+    right: 0.1rem;  
+    z-index: 2000;
+    display: flex;
+  }
+
+  /* PCナビは非表示 */
+  .header-nav {
+    display: none;
+    position: static;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background: #ffffffee;
+    backdrop-filter: blur(6px);
+    padding: 1.5rem 0;
+    text-align: center;
+  }
+
+  .header-nav.active {
+    display: block;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+
+
+/* ====================================
+  CSS for section section:Hero 
+==================================== */
+#section-hero {
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
+/* background-color: #fff; */
+}
+
+.hero-container {
+width: 100%;
+height: 100%;
+max-width: 40rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin: 0;
+}
+
+/* Badge */
+.hero-badge {
+margin: 2rem 0 1rem 0;
+}
+.hero-badge img {
+width: 326px;
+max-width: 100%;
+}
+
+/* Typography Colors */
+.hero-subtitle,
+.hero-title,
+.hero-rent,
+.hero-access {
+color: #3d966c;
+}
+
+/* Subtitle */
+.hero-subtitle {
+font-size: 1.5em;
+letter-spacing: 0.06em;
+font-weight: 600;
+margin: 0 0 0.3rem 0;
+}
+
+/* Main Title */
+.hero-title {
+font-family: Noto Sans JP;
+font-size: 4.5em;
+font-weight: 700;
+margin: 0 0 1rem 0;
+letter-spacing: 0.2em;
+gap: 0.3em;
+position: relative; 
+display: flex;
+justify-content: center;
+}
+
+/* Rent */
+.hero-rent {
+font-size: 28px;
+font-weight: 600;
+letter-spacing: 0.04em;
+margin: 0 0 10px 0;
+}
+.rent-note {
+font-size: 0.8em;
+}
+
+/* Access */
+.hero-access {
+font-size: 20px;
+font-weight: 400;
+margin: 0 0 40px 0;
+letter-spacing: 0.04em;
+}
+
+/* Setsumeikai Block */
+.setsumeikai-hero-openhouse-block {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+margin-bottom: 1.56rem;
+}
+
+.setsumeikai-openhouse-date {
+font-size: 28px;
+font-weight: 700;
+color: #000000;
+margin: 0;
+}
+
+.setsumeikai-venue-link {
+display: flex;
+align-items: center;
+gap: 8px;
+font-size: 1em;
+color: #040404;
+font-weight: 400;
+text-decoration: underline;
+border-bottom: 1px solid transparent;
+transition: border-color 0.2s;
+}
+.setsumeikai-venue-link:hover {
+border-bottom-color: #040404;
+}
+.setsumeikai-icon-link {
+width: 22px;
+height: 21px;
+}
+
+/* Setsumeikai CTA Button */
+.setsumeikai-cta-wrapper {
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.setsumeikai-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: rgb(228, 228, 228);
+color: #333;
+width: 100%;
+max-width: 26.25rem; 
+height: 3.5rem;  
+border-radius: 1.75rem;
+border: 2px solid #333;
+text-decoration: none;
+font-weight: 700;
+font-size: 0.9em;
+position: relative;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.setsumeikai-btn:hover,
+.setsumeikai-btn:active {
+  background-color: #3f3f3f; 
+  color: #fffc;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-2px);
+}
+
+.setsumeikai-cta-text {
+font-size: 1.2em;
+font-weight: 500;
+letter-spacing: 0.3em;
+}
+
+/* Hero Section – New Mobile Optimization */
+@media (max-width: 768px) {
+
+  #section-hero {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .hero-container {
+    max-width: 100%;
+    width: 100%;
+    min-width: auto;   
+  }
+
+  .hero-badge img {
+    width: 12rem;
+    height: auto;
+    margin: 0 1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4rem;
+  }
+
+  .hero-title {
+    font-size: 3.3rem;
+    line-height: 1.2;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.25em;
+    word-break: keep-all;
+  }
+
+  .hero-rent {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .rent-note {
+    font-size: 0.85rem;
+  }
+
+  .hero-access {
+    font-size: 0.7rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+  }
+
+  .setsumeikai-hero-openhouse-block {
+    width: 100%;
+    padding: 1rem;
+    margin: 0 auto 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .setsumeikai-openhouse-date {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .setsumeikai-venue-link {
+    font-size: 1rem;
+    gap: 0.25rem;
+  }
+
+  .setsumeikai-icon-link {
+    width: 1.2em;
+    margin: 0.1em 0 0 0.1em;
+  }
+
+  .setsumeikai-cta-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .setsumeikai-btn {
+    width: 100%;
+    max-width: 20rem;
+    height: auto;
+    padding: 0.9rem 1rem;
+    border-radius: 4em;
+  }
+
+  .setsumeikai-cta-text {
+    font-size: 1rem;
+    letter-spacing: 0.2em;
+    margin-right: 0.75rem;
+  }
+
+  .setsumeikai-cta-icon {
+    width: 18px;
+    right: 12px;
+    margin-right: 0.75rem;
+  }
+}
+
+
+/* ==================================== */
+/* CSS for section section:OPEN HOUSE */
+/* ==================================== */
+#section-openhouse {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.opnehouse-container {
+  width: 100%;
+  max-width: 48rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  }
+
+.openhouse-title {
+  font-family: "Josefin Sans";
+  font-size: 2.9em;
+  font-weight: 300;
+  color: #3d966c;
+  text-align: center;
+  margin: 1rem 0 0 0;
+}
+
+/* Header Styles */
+.openhouse-header {
+  width: 100%;
+  height: 7.2rem;
+  position: relative;
+  margin-left: 0.375rem; 
+  margin-bottom: 0;
+  z-index: 2; 
+}
+
+.header-visuals {
+  position: relative;
+  width: 862px;
+  height: 115px;
+}
+
+/* Body Styles */
+.openhouse-body {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.openhouse-content {
+  border: 2px solid #00a561;
+  border-radius: 2rem;
+  background-color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.schedule-text {
+  color: #3d966c;
+  font-size: 24px; 
+  line-height: 1.5;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin: 0 0 11px 0;
+  white-space: pre-wrap;
+}
+
+/* Button Styles */
+.tour-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 26.25rem; 
+  height: 3.5rem;  
+  background-color: #fff;
+  border: 2px solid #3d966c;   
+  border-radius: 3em;
+  text-decoration: none;
+  padding: 0 0.9375rem;
+  margin-bottom: 1.375rem;
+  position: relative;
+  box-shadow: none;
+  transition: all 0.2s;
+  color: #3d966c; 
+}
+
+.tour-btn:hover,
+.tour-btn:active {
+  background-color: #3d966c; 
+  color: #fffc;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-2px);
+}
+
+.tour-btn-text {
+  font-size: 1.15em;
+  letter-spacing: 0.16em;
+  font-weight: 500;
+  margin: 0 0 0 4rem;
+}
+
+.tour-btn-icon {
+  position: relative;
+  width: 1.6875em;
+  height: 1.6875em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tour-icon-arrow {
+  width: 0; 
+  height: 0; 
+  border-top: 0.4375em solid transparent;
+  border-bottom: 0.4375em solid transparent;  
+  border-left: 0.625em solid #3d966c; 
+  position: relative;
+  z-index: 2;
+  left: 2px;
+}
+
+.tour-btn:hover .icon-arrow,
+.tour-btn:active .icon-arrow {
+  border-left: 0.625em solid #fff; 
+}
+
+/* Footer Note */
+.footer-note {
+  color: #3d966c;
+  font-size: 0.9em;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .openhouse-container {
+    align-items: center;
+  }
+  
+  .openhouse-header {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    overflow: hidden; /* Clip the fixed-width SVG header on small screens */
+  }
+  
+  .header-visuals {
+    width: 100%;
+    max-width: 862px;
+    height: auto;
+    transform-origin: top center;
+    transform: scale(0.8); 
+    margin: 0 auto;
+  }
+
+  .openhouse-body {
+    margin-left: 0;
+    width: 96%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-visuals {
+    transform: scale(0.5); /* Scale down more for mobile */
+    margin-bottom: -50px; /* Adjust for scaled height */
+  }
+  
+  .openhouse-header {
+    height: 60px; /* Approximate scaled height */
+  }
+
+  .schedule-text {
+    font-size: 1em;
+  }
+
+  .tour-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: auto; 
+    height: 4rem;  
+    background-color: #fff;
+    border: 2px solid #3d966c;   
+    border-radius: 3em;
+    text-decoration: none;
+    box-shadow: none;
+    transition: all 0.2s;
+    color: #3d966c; 
+  }
+
+  .tour-btn-text {
+    font-size: 0.89em;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    margin: 0 0 0.2rem 0.4rem;
+  }
+
+  .tour-btn-icon {
+    position: relative;
+    width: 1.3em;
+    height: 1.6875em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tour-icon-arrow {
+    width: 0; 
+    height: 0; 
+    border-top: 0.4375em solid transparent;
+    border-bottom: 0.4375em solid transparent;  
+    border-left: 0.625em solid #3d966c; 
+    position: relative;
+    z-index: 2;
+    left: 0.6rem;
+  }
+
+  .tour-btn:hover .icon-arrow,
+  .tour-btn:active .icon-arrow {
+    border-left: 0.625em solid #fff; 
+  }
+}
+
+/* ==================================== */
+/* CSS for section section:Message */
+/* ==================================== */
+#section-message {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+  background-color: rgba(256, 256, 256, 0.5);
+}
+
+.message-container {
+  max-width: 48rem;
+  text-align: center;      
+  margin: 0;
+  padding: 1.45rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.concept-title {
+  font-family: 'Josefin Sans';
+  color: #3d966c;
+  font-size: 3em;
+  font-weight: 300;
+  text-align: center;    
+  margin: 0 0.1rem;  
+  letter-spacing: 0.03em;
+  display: block;  
+}
+
+.message-text-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.message-main-text {
+  font-family: 'Noto Sans JP';
+  color: #3d966c; 
+  font-size: 1em; 
+  line-height: 2.24;
+  letter-spacing: 0.09em;
+  text-align: center;
+  display: inline-block; 
+  font-feature-settings: "palt";
+  white-space: pre-wrap;
+  padding: 0 0.3em;
+}
+
+.message-note-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1.75rem 0;
+}
+
+.note-box {
+  border: 2px solid #3d966c;
+  border-radius: 25px;
+  padding: 1.5em;
+  width: 100%;
+  max-width: 40rem;
+  box-sizing: border-box;
+  margin: 1.5rem auto 0;    /* 上下の余白・中央配置 */
+  display: block; 
+}
+
+.note-text {
+  font-family: 'Noto Sans JP';
+  color: #3d966c;
+  font-size: 1em;
+  line-height: 2;
+  text-align: justify;
+  margin: 0;
+    padding: 1rem;
+  white-space: pre-wrap;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .message-container {
+    padding: 1.45rem 1.45rem 0 1.45rem;
+  }
+
+  .message-main-text {
+    font-size: 0.9em;
+    line-height: 1.8;
+    white-space: normal; /* Allow natural wrapping on mobile */
+  }
+
+  .note-box {
+    padding: 15px;
+    border-radius: 15px;
+  }
+
+  .note-text {
+    font-size: 1em;
+    white-space: normal; /* Allow natural wrapping on mobile */
+  }
+}
+
+/* ==================================== */
+/* CSS for section section: 3 Points */
+/* ==================================== */
+#section-three-points {
+width: 100%;
+max-width: 80vw;
+justify-content: center;
+align-items: center;
+margin: 0 auto;
+padding: 1rem 1rem;
+}
+
+.points-container {
+width: 100%;
+max-width: 80vw;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: flex-start;
+gap: 3rem; 
+}
+
+.point-card {
+flex: 1;
+min-width: 17.5rem;
+}
+
+.card-header-point {
+background-color: #3d966c;
+/* height: 30rem; */
+padding-top: 4rem;  
+padding-bottom: 6rem; 
+width: 100%;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+
+.en-title {
+font-family: 'Josefin Sans';
+font-size: 2.5em;
+font-weight: 300;
+letter-spacing: 0.03em;
+margin-bottom: 0.1em;
+}
+
+.jp-subtitle {
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 1.14em;
+font-weight: 400;
+letter-spacing: 0.1em;
+color: #fcfcfc;
+opacity: 1;
+}
+
+.card-body {
+margin-top: 0;
+}
+
+.card-text {
+color: #3d966c;
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 20px;
+line-height: 1.75;
+text-align: justify;
+font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .points-container {
+    gap: 3rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .points-container {
+    gap: 2rem;  
+  }
+}
+
+/* スマホ時 */
+@media (max-width: 600px) {
+.en-title {
+  font-size: 3em; 
+}
+
+.jp-subtitle {
+  font-size: 1.5rem; 
+}
+
+.card-text {
+  font-size: 1rem; 
+  line-height: 1.5;
+}
+
+.points-container {
+    flex-direction: column;
+    gap: 2rem;       
+    align-items: center;
+  }
+
+.point-card {
+  width: 100%;
+  min-width: 22rem;
+}
+
+.card-header {
+  height: 2rem;
+}
+
+.card-header-point {
+background-color: #3d966c;
+padding: 1rem 0cm 3rem 0rem; 
+width: 100%;
+border-radius: 1rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+color: #fff;
+}
+}
+
+/* ==================================== */
+/* CSS for section section:awesome */
+/* ==================================== */
+#section-awesome {
+  width: 100%;
+  padding: 3.75rem 2rem 0.1rem 2rem;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.awesome-container {
+margin: 0 auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 3.75rem; 
+width: 100%;
+max-width: 62rem; 
+}
+
+.awesome-header {
+text-align: center;
+}
+
+.awesome-subtitle {
+font-family: 'Roboto Condensed';
+font-size: 1.2rem;
+font-weight: 400;
+letter-spacing: 0.05em;
+color: #3d966c;
+text-transform: uppercase;
+padding: 0 0 0 1em;
+}
+
+.header-line {
+width: 150px;
+height: 3px;
+background-color: #3d966c;
+border-radius: 2px;
+}
+
+.awesome-title {
+font-family: 'Noto Sans JP', sans-serif;
+font-size: 1.75rem;
+font-weight: 700;
+color: #3d966c;
+/* 10px を 0.625rem に修正 */
+margin-top: 0.625rem; 
+}
+
+.card-header-awesome {
+min-height: 2rem;
+display: flex;
+justify-content: flex-start;
+align-items: center; 
+color: #3d966c; 
+width: 100%;
+padding: 0 1.25rem; 
+}
+
+.card-separator {
+width: 2px; 
+height: 1.5rem; 
+background-color: #3d966c; 
+margin: 0 0.8rem; 
+}
+
+
+/* Grid Styles */
+.awesome-grid {
+width: 100%;
+display: grid;
+grid-template-columns: repeat(3, 1fr); 
+gap: 3rem;
+}
+
+@media (max-width: 48rem) {
+.awesome-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/* 画面幅が 600px (37.5rem) 以下の場合 */
+@media (max-width: 37.5rem) {
+.awesome-grid {
+  grid-template-columns: repeat(1, 1fr);
+}
+}
+
+/* Card Styles */
+.awesome-container {
+gap: 1rem; 
+}
+
+.awesome-card {
+display: flex;
+flex-direction: column;
+width: 100%;
+}
+
+.card-top-border {
+width: 100%;
+height: 2px;
+background-color: #3d966c;
+margin-bottom: 15px;
+}
+
+.card-header-awesome {
+display: flex;
+align-items: center;
+margin-bottom: 20px;
+height: 70px; /* Fixed height to align items */
+}
+
+.card-number-awesome {
+font-size: 2rem;
+font-weight: 500;
+color: #3d966c; /* 色を緑に設定 */
+}
+
+.card-separator-awesome {
+width: 2px;
+height: 50px;
+background-color: #3d966c;
+margin: 0 20px;
+}
+
+.card-title-awesome {
+margin: 0; 
+font-size: 1.25rem;
+letter-spacing: 0.05em;
+font-weight: 700;
+color: #3d966c;
+}
+
+.card-description {
+font-family: 'Noto Sans JP';
+font-size: 0.95rem;
+line-height: 1.8;
+color: #2d2d2d;
+text-align: justify;
+}
+
+/* ==================================== */
+/* CSS for section section:Outline */
+/* ==================================== */
+#section-outline {
+  width: 100%;
+  padding: 3.75rem 1.25rem;
+  margin: 0 auto;
+  background-color: #d2f1cc;
+  color: #3d966c;
+  position: relative;
+  overflow: hidden;
+}
+
+#section-outline::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(242, 248, 246, 0.6) 2px, transparent 2px),
+    radial-gradient(rgba(10, 26, 18, 0.1) 1.5px, transparent 2px);
+  background-size: 6px 6px, 4px 4px;
+  opacity: 0.2; 
+  pointer-openhouses: none;
+}
+
+.outline-container {
+width: 100%;
+max-width: 62.5rem;
+margin: 0 auto;
+padding: 0;
+}
+
+/* Header Styles */
+.outline-header {
+text-align: center;
+margin-bottom: 2rem;
+}
+
+.header-en {
+display: block;
+font-size: 1.25rem; /* 20px -> 1.25rem */
+font-weight: 700;
+letter-spacing: 0.1em;
+margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+text-transform: uppercase;
+}
+
+.header-line {
+width: 9.375rem; /* 150px -> 9.375rem */
+height: 3px;
+background-color: #3d966c;
+margin: 0 auto 1.25rem; /* 20px -> 1.25rem */
+}
+
+.header-jp {
+font-size: 2.5rem; /* 40px -> 2.5rem */
+font-weight: 700;
+margin: 0;
+}
+
+/* Table Styles */
+.outline-table {
+border-top: 2.5px solid #3d966c;
+display: flex;
+flex-direction: column;
+}
+
+.outline-row {
+display: flex;
+border-bottom: 2px solid #3d966c;
+padding: 2rem 0;
+}
+
+.row-label {
+color: #3d966c;
+width: 12.5rem;
+flex-shrink: 0;
+font-weight: 600;
+letter-spacing: 0.05em;
+padding-left: 1.25rem;
+padding-right: 1.25rem; 
+position: relative;
+display: flex;
+align-items: flex-start;
+}
+
+/* Vertical Divider Line */
+.row-label::after {
+content: '';
+position: absolute;
+right: 0;
+top: 5px; 
+bottom: 5px;
+width: 2px;
+background-color: #3d966c;
+}
+
+.row-content {
+color: #333; 
+flex-grow: 1;
+padding-left: 2.5rem; 
+padding-right: 1.25rem; 
+white-space: pre-wrap;
+line-height: 1.8;
+font-weight: 400;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) { 
+.outline-row {
+  flex-direction: column;
+  padding: 1.25rem 0; 
+}
+
+.row-label {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+}
+
+.row-label::after {
+  display: none; 
+}
+
+.row-content {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.header-jp {
+  font-size: 2rem; 
+}
+}
+
+/* スマホ時 */
+@media (max-width: 600px) { 
+#section-outline {
+  width: 100%;
+  padding: 2.7rem 1.75rem 0 1.75rem ;
+  margin: 1rem auto;
+  background-color: #d2f1cc;
+  color: #3d966c;
+  position: relative;
+  overflow: hidden;
+}
+
+.outline-row {
+  flex-direction: column;
+  padding: 1.25rem 0; 
+}
+
+.row-label {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+}
+
+.row-label::after {
+  display: none; 
+}
+
+.row-content {
+  padding-left: 1rem;
+  padding-right: 0;
+  text-align: left;
+}
+
+.header-jp {
+  font-size: 2rem; 
+}
+}
+
+/* ==================================== */
+/* CSS for section section:Rooms */
+/* ==================================== */
+#rooms-section {
+width: 100%;
+display: flex;
+justify-content: center;
+padding: 3.75rem 1.25rem;
+}
+
+.rooms-container {
+background-color: #fff;
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+/* Header Styles */
+.rooms-header {
+text-align: center;
+margin: 2.3rem 0 1rem 0;
+width: 100%;
+max-width: 48vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.rooms-label {
+font-family: 'Roboto Condensed';
+font-weight: 500;
+font-size: 0.9em;
+letter-spacing: 0.1em;
+color: #3d966c;
+border-bottom: 2px solid #3d966c;
+padding-bottom: 4px;
+margin-bottom: 20px;
+display: inline-block;
+text-transform: uppercase;
+}
+
+.rooms-title {
+font-family: 'Roboto Condensed';
+font-weight: 700;
+font-size: 32px;
+color: #3d966c;
+margin-bottom: 0.9em;
+}
+
+.rooms-subtitle {
+font-family: 'Noto Sans JP';
+font-weight: 500;
+font-size: 1em;
+color: #3d966c;
+line-height: 1.5;
+text-align: center;
+margin-bottom: 1rem;
+width: 35rem;
+}
+
+.separator-line {
+width: 100%;
+height: 0;
+border-top: 2.5px solid #3d966c;
+margin: 1rem 0 1rem 0;
+}
+
+/* Unit Block Styles */
+.unit-block {
+width: 100%;
+max-width: clamp(40ch, 60vw, 70ch);
+margin-bottom: 20px;
+}
+
+.unit-heading {
+font-family: 'Roboto Condensed';
+font-weight: 500;
+font-size: 1.4em;
+letter-spacing: 0.05em;
+color: #686868; 
+margin: 0 0 1rem 0.3rem;
+}
+
+.unit-heading-jp {
+font-family: 'Noto Sans JP';
+font-weight: 500;
+font-size: 1.1em;
+letter-spacing: 0.1em;
+color: #686868; 
+}
+
+.floor-plans {
+display: flex;
+justify-content: center;
+gap: 1rem;
+flex-wrap: wrap;
+}
+
+.plan-item {
+display: flex;
+flex-direction: column;
+align-items: center;
+max-width: 25rem; 
+}
+
+.plan-image-wrapper {
+margin-bottom: 0.9em;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+height: 22rem;
+width: 100%;
+margin: 0;
+}
+
+.plan-image-wrapper-property {
+margin-bottom: 0.9em;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+/* height: 20rem; */
+width: 100%;
+}
+
+.plan-img {
+max-height: 100%;
+width: auto;
+object-fit: contain;
+}
+
+.floor-tag {
+width: 100%;
+height: 2rem;
+color: #3d966c; 
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: 'Roboto Condensed';
+font-weight: 500;
+font-size: 1.1em;
+letter-spacing: 0.1em;
+}
+
+/* Site Plan Styles */
+.site-plan-block {
+width: 100%;
+max-width: clamp(40ch, 60vw, 70ch);
+margin-bottom: 3.75rem;
+}
+
+.site-plan-wrapper {
+display: flex;
+justify-content: center;
+margin-top: 0.5rem;
+}
+
+.site-plan-img {
+max-width: 33rem;
+height: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+.rooms-title {
+  font-size: 24px;
+}
+
+.rooms-subtitle {
+  font-size: 0.9em;
+}
+
+.floor-plans {
+  gap: 1rem;
+}
+
+.plan-image-wrapper {
+  height: auto;
+  min-height: 16rem;
+}
+
+.unit-heading {
+  text-align: center;
+  padding-left: 0;
+}
+
+.site-plan-img {
+  max-width: 90%;
+  height: auto;
+}
+}
+
+/* ==================================== */
+/* CSS for section section:Description */
+/* ==================================== */
+#section-description {
+padding: 5rem 1.25rem;
+background-color: #fff;
+}
+
+.desc-container {
+max-width: 72rem;
+margin: 0 auto;
+}
+
+/* Header Styles */
+.desc-header {
+text-align: center;
+margin-bottom: 1.5rem;
+}
+
+.title-group {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.eng-title {
+font-size: 0.9em;
+letter-spacing: 0.1em;
+font-weight: 700;
+/* margin-bottom: 0.4rem; */
+text-transform: uppercase;
+}
+
+.title-separator {
+width: 150px;
+height: 3px;
+background-color: var(--color-primary);
+margin-bottom: 0.4rem;
+}
+
+.jp-title {
+font-size: 32px;
+color: #3d966c;
+font-weight: 700;
+letter-spacing: 0.05em;
+margin: 0;
+}
+
+.desc-text {
+color: #3d966c;
+font-size: 1em;
+line-height: 1.8;
+white-space: pre-line;
+width: 40rem;
+margin-top: 0;
+padding: 0 1.75rem 1rem 1.75rem;
+}
+
+.desc-subtitle {
+  font-family: 'Noto Sans JP';
+  font-weight: 500;
+  font-size: 1em;
+  color: #3d966c;
+  line-height: 1.5;
+  width: 28rem;
+  display: flex;
+  justify-content: center;
+  margin: 0.6rem auto 0 auto; /* ←中央寄せも確実に */
+}
+
+/* CTA Wrapper */
+.cta-wrapper {
+display: flex;
+justify-content: center;
+margin-bottom: 60px;
+}
+
+/* Info Table Styles */
+.info-table {
+border-top: 2.5px solid var(--color-primary);
+margin-bottom: 80px;
+}
+
+.info-row {
+display: flex;
+border-bottom: 2px solid #3d966c;
+padding: 25px 0;
+}
+
+.info-label {
+width: 220px;
+flex-shrink: 0;
+padding: 30px 20px;
+font-weight: 700;
+color: #3d966c;
+font-size: 1em;
+display: flex;
+align-items: flex-start; /* Align text to top */
+border-right: 2.5px solid var(--color-primary);
+line-height: 1.6;
+}
+
+.info-content {
+text-align: left;
+color: #3d966c;
+flex-grow: 1;
+padding: 0 1.75rem 1rem 1.75rem;
+font-size: 1em;
+line-height: 1.8;
+}
+
+.info-content ul {
+margin: 0;
+padding-left: 1.2em;
+list-style-type: disc;
+}
+
+.info-content li {
+margin-bottom: 0.5em;
+}
+
+.info-content li:last-child {
+margin-bottom: 0;
+}
+
+/* Flow Section Styles */
+.flow-section {
+text-align: center;
+}
+
+.flow-timeline-wrapper {
+  max-width: 40vw; 
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+.description-section {
+  padding: 2.5rem 0.9375rem;
+}
+
+.desc-subtitle {
+font-family: 'Noto Sans JP';
+font-weight: 500;
+font-size: 1em;
+color: #3d966c;
+line-height: 1.5;
+text-align: center;
+width: 18rem;
+}
+
+.jp-title {
+  font-size: 24px;
+}
+
+.desc-text {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.info-row {
+  flex-direction: column;
+}
+
+.info-label {
+  color: #3d966c;
+  width: 200px;
+  flex-shrink: 0;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  padding: 0.8rem 1.75rem 0.8rem 1.75rem;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-content {
+  padding: 20px 15px;
+}
+
+.flow-title {
+  color: #3d966c;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+}
+
+/* ==================================== */
+/* CSS for section section:HowTo */
+/* ==================================== */
+#section-howto {
+  width: 100%;
+  padding: 3.75rem 1.25rem;
+  margin: 0 auto;
+  background-color: #d2f1cc;
+  color: #3d966c;
+  position: relative;
+  overflow: hidden;
+}
+
+#section-howto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(242, 248, 246, 0.6) 2px, transparent 2px),
+    radial-gradient(rgba(10, 26, 18, 0.1) 1.5px, transparent 2px);
+  background-size: 6px 6px, 4px 4px;
+  opacity: 0.2; 
+  pointer-openhouses: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+.howto-header {
+  text-align: center;
+  margin-bottom: 1.45rem;
+}
+
+.title-en {
+  color: #3d966c;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  margin: 0 0 15px 0;
+  text-transform: uppercase;
+}
+
+.title-line {
+  width: 150px;
+  height: 0;
+  border-top: 3px solid #3d966c;
+  margin: 0 auto 20px;
+}
+
+.title-jp {
+  color: #3d966c;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.05em;
+}
+
+/* Description Styles */
+.howto-description {
+  color: #3d966c;
+  text-align: center;
+  line-height: 1.8;
+  font-size: 0.9em;
+  margin-bottom: 1.45rem;
+  font-weight: 500;
+  max-width: 50vh;
+}
+
+.howto-description p {
+  margin: 0 0 24px 0;
+}
+
+.howto-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Button Component Styles */
+.button-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 43rem;
+  height: 4.45rem;
+}
+
+.button-main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  text-decoration: none;
+  z-index: 2;
+  transition: transform 0.2s ease;
+}
+
+.button-shadow {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  /* Roboto Condensed-openhouses: none; */
+}
+
+.button-main:hover {
+  transform: translate(2px, 2px);
+}
+
+.button-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #fff;
+}
+
+.button-icon {
+  width: 28px;
+  height: 27px;
+  object-fit: contain;
+}
+
+.button-text-primary {
+  font-size: 20px; /* ~20px */
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.button-text-secondary {
+  font-size: 0.9em; /* ~0.9em */
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 0.1em;
+  margin-top: 4px; /* Slight alignment adjustment */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .howto-section {
+    padding: 60px 20px;
+  }
+
+  .title-jp {
+    font-size: 24px;
+  }
+
+  .button-wrapper {
+    height: auto;
+    min-height: 92px;
+  }
+
+  .button-main {
+    padding: 20px;
+  }
+
+  .button-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .button-text-secondary {
+    font-size: 12px;
+  }
+  
+  /* Adjust shadow for responsive height */
+  .button-shadow {
+    height: 100%;
+  }
+}
+
+/* ==================================== */
+/* CSS for section section:HowToView */
+/* ==================================== */
+#howto-view {
+  width: 100%;
+  max-width: 1023px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: #fff;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.eng-title {
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  color: #3d966c;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.eng-title-w {
+  font-size: 0.9em;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin: 0 0 10px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.title-underline {
+  width: 150px;
+  height: 3px;
+  background-color: #3d966c;
+  margin: 0 auto 20px auto;
+}
+
+.title-underline-w {
+  width: 150px;
+  height: 3px;
+  background-color: #fff;
+  margin: 0 auto 20px auto;
+}
+
+.jp-title-w {
+  font-size: 32px;
+  color: #fafafa;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+}
+
+.intro-text {
+  width: 100%;
+  padding: 1rem 1rem;
+  font-size: 0.9em;
+  line-height: 1.8;
+  color: #3d966c;
+  margin: 3vh 0 0 0;
+}
+
+/* Timeline */
+.timeline {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-bottom: 5rem;
+}
+
+.step-item {
+  display: flex;
+  gap: 1rem;
+}
+
+.step-marker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.step-number {
+  font-size: 40px;
+  font-weight: 700;
+  color: #3d966c;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.step-line {
+  width: 6px;
+  background-color: #3d966c;
+  flex-grow: 1;
+  min-height: 4rem;
+}
+
+.step-content {
+  flex-grow: 1;
+  padding-top: 5px;
+  color: #3d966c;
+}
+
+.step-content-setsumeikai {
+  color: #333;!important;
+  flex-grow: 1;
+  padding: 0.2rem 1.75rem 0 1.75rem;
+}
+
+.step-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #3d966c;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.step-note {
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.step-date {
+  text-align: left;
+  font-size: 0.9em;
+  color: #333;
+  margin: 0.5remrem 0 1.4rem 0;
+  font-weight: 500;
+}
+
+.location-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9em;
+  color: #3d966c;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.link-icon {
+  width: 22px;
+  height: 22px;
+}
+
+.step-desc {
+  font-size: 0.9em;
+  color: #3d966c;
+  margin: 0;
+}
+
+/* Sub Section (Step 02) */
+.sub-section {
+  margin: 1rem 0 0 0;
+  text-align: left;
+}
+
+.sub-title-howto {
+  font-size: 1.23em;
+  font-weight: 700;
+  color: #3d966c;
+  margin: 0 0 10px 0;
+}
+
+.sub-time-howto {
+  font-size: 1em;
+  font-weight: 500;
+  color: #3d966c;
+  margin: 0 0 10px 0;
+}
+
+.sub-desc-howto {
+  font-size: 0.95em;
+  line-height: 1.6;
+  color: #3d966c;
+  margin: 0 0 25px 0;
+}
+
+/* Tour Button */
+.tour-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3d966c;
+  color: #fcfcfc;
+  padding: 0 20px;
+  width: 24em;
+  height: 2.75em;
+  border-radius: 28px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 8px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.tour-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.tour-button:hover::before {
+  opacity: 1;
+}
+
+.btn-text {
+  flex-grow: 1;
+  text-align: center;
+  z-index: 1;
+}
+
+.btn-icon-wrapper {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  z-index: 1;
+}
+
+.btn-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.btn-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.9em;
+  height: 0.9em;
+}
+
+/* Info Box */
+.info-box {
+  background-color: rgba(30, 81, 57, 0.15);
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.5625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.info-box p {
+  margin: 0;
+  color: #3d966c;
+  font-size: 0.9em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  font-feature-settings: "palt";
+}
+
+/* CTA Footer */
+.pdf-cta-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 65rem; 
+  margin: 0 auto 1rem auto;
+  /* min-height: 1rem; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PDF CTA Button */
+.pdf-cta-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.pdf-btn {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #37805d;
+color: #fcfcfc;
+padding: 0 1.25rem;
+width: 100%;
+max-width: 26.25rem; 
+height: 3.5rem;  
+border-radius: 1.75rem;
+text-decoration: none;
+font-weight: 700;
+font-size: 0.9em;
+position: relative;
+transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.pdf-btn:hover,
+.pdf-btn:active {
+  background-color: #5a9076; 
+  color: #fffc;       
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  transform: translateY(-2px);
+}
+
+.cta-main-text {
+  font-size: clamp(1.2rem, 2vw, 1.4rem);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* Caution Card */
+.caution-card {
+  max-width: 43rem;
+  margin-top: 3rem;
+  background-color: #fffbb7;
+  border: 0.125rem solid #37805d;
+  border-radius: 1.4375rem;
+  padding: 1.875rem;
+}
+
+.caution-title {
+  font-size: 1em;
+  font-weight: 700;
+  color: #3d966c;
+  margin: 0 0 0.9375rem 0;
+}
+
+.caution-text p {
+  text-align: left;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #3d966c;
+  margin: 0 0 0.5rem 0;
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.caution-text p::before {
+  content: "・";
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) { 
+  
+  .step-item {
+    flex-direction: column;
+    gap: 0.625rem;
+  }
+
+  .step-marker {
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    gap: 0.9375rem; 
+    margin-bottom: 0.625rem; 
+  }
+
+  .step-line {
+    height: 0.125rem;
+    min-height: 0.125rem;
+    width: 100%;
+  }
+
+  .step-content {
+    padding-left: 0;
+  }
+
+  .cta-content {
+    flex-direction: column;
+    gap: 0.3125rem; 
+  }
+
+  .cta-button {
+    height: auto;
+    padding: 0.9375rem;
+  }
+
+  .cta-wrapper {
+    height: auto;
+    min-height: 6.25rem;
+  }
+
+  .cta-shadow {
+    height: 100%;
+  }
+}
+
+/* ====================================
+  CSS for section section:Partners
+==================================== */
+#section-partners {
+  background-color: #3d966c;
+  width: 100%;
+  padding: 1.75rem 3rem 4rem 3rem;  
+  color: #fff;
+  z-index: 5;
+}
+
+.partners-container {
+  width: 100%;
+  max-width: 68.75rem; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+
+/* Header Styles */
+.partners-header {
+  text-align: center;
+  margin-bottom: 3.75rem; /* 60px → 3.75rem */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9375rem; /* 15px → 0.9375rem */
+}
+
+.partners-subtitle {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1.5rem; 
+  font-weight: 400;
+  letter-spacing: 0.09375rem; 
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.partners-title {
+  font-size: 1.5rem; 
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Grid Layout */
+.partners-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.875rem; 
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #section-partners {
+  padding: 1rem 1.75rem 3rem 1.75rem;  
+  }
+
+  .partners-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 1.75rem 0 1.75rem;
+    gap: 2.5rem; 
+  }
+}
+
+/* Card Styles */
+.partner-card {
+  background-color: #fff;
+  border-radius: 1em;
+  padding: 2rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+
+.card-image-wrapper {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-image {
+  max-height: 6rem;
+  max-width: auto;
+  object-fit: contain;
+}
+
+.card-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-name {
+  color: #686665;
+  font-size: 1em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6;
+  margin: 0 0 30px 0;
+  white-space: pre-line; /* Handles line breaks in names */
+}
+
+.card-description-partner {
+  color: #686665;
+  font-size: 1em;
+  line-height: 1.8;
+  text-align: justify;
+  margin: 0;
+  width: 100%;
+}
+
+/* ==================================== */
+/* CSS for section section:Footer */
+/* ==================================== */
+#section-footer{
+width: 100%;
+margin: 0 auto;
+padding: 0 2rem;
+min-height: 30rem;
+display: flex;
+flex-direction: column;
+position: relative;
+background-color: #fff;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 28rem;
+  padding-top: 3rem;
+}
+
+/* Header Styles */
+.footer-header {
+  text-align: center;
+  margin-bottom: 3rem; 
+}
+
+.footer-title {
+  font-size: 2rem;       
+  font-weight: 700;
+  color: #262626;
+  margin: 0 0 2rem 0;     
+  line-height: 1.4;      
+}
+
+.footer-subtitle {
+  font-size: 1.5rem;     
+  font-weight: 500;
+  color: #0e0e0e;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Button Component Styles */
+.contact-button-wrapper {
+  position: relative;
+  width: 63.75rem;   
+  height: 5.75rem;   
+  max-width: 100%;
+  display: block;
+  margin-bottom: auto;
+}
+
+.contact-btn-shadow {
+  position: absolute;
+  top: 0.25rem;        
+  left: 0.9em;         
+  width: 62.875rem; 
+  height: 5.5rem; 
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-width: 100%;
+}
+
+.contact-btn-main {
+  position: relative;
+  width: 63.1875rem; 
+  height: 5.1875rem; 
+  background-color: #000000;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  transition: transform 0.2s ease;
+}
+
+.contact-button-wrapper:hover .contact-btn-main {
+  transform: translate(0.125rem, 0.125rem); /* 2px */
+}
+
+.contact-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;       
+  padding: 0 1.25rem; 
+}
+
+.contact-icon {
+  width: 1.75rem;    
+  height: 1.6875rem; 
+  object-fit: contain;
+}
+
+.contact-text-primary {
+  color: #fff;
+  font-size: 1.25rem; 
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.contact-text-secondary {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9em;
+  font-weight: 400;
+  white-space: nowrap;
+}
+
+/* Copyright Styles */
+.footer-copyright {
+  margin-top: auto;  
+  margin-bottom: 0.1rem; 
+  text-align: center;
+  color: #777;
+  font-size: 0.75rem;
+  letter-spacing: 0.0em;
+}
+
+/* Responsive: ～1024px */
+@media (max-width: 1024px) {
+
+  .contact-button-wrapper {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-btn-shadow,
+  .contact-btn-main {
+    width: 100%;
+  }
+
+  .contact-btn-shadow {
+    left: 4px;
+  }
+}
+
+
+/* Responsive: ～768px */
+@media (max-width: 768px) {
+
+  /* Footer Section */
+  .footer-section {
+    min-height: auto;
+    padding-bottom: 3.75rem; /* 60px */
+  }
+
+  .footer-title {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .footer-subtitle {
+    font-size: 0.9em;
+  }
+
+  /* CTA Button (Main) */
+  .contact-btn-main {
+    height: auto;
+    padding: 20px;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    gap: 0.5rem; /* 8px */
+    text-align: center;
+  }
+
+  .contact-btn-shadow {
+    height: 100%;
+  }
+
+  .footer-header {
+    margin-bottom: 3.75rem; /* 60px */
+  }
+}
+
+
+/* ============================
+   CTA Floating Image
+   ============================ */
+
+.cta-fixed-img {
+  position: fixed;
+  right: 0; 
+  top: 50%;
+  transform: translateY(-80%);
+  box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.1s ease-out; 
+  z-index: 999; 
+}
+
+.cta-fixed-img:hover {
+  transform: translateY(calc(-80% - 3%));
+}
+
+@media (max-width: 768px) { 
+    .cta-fixed-img {
+        box-shadow: none;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .cta-fixed-img img {
+        width: 55%;
+        margin: 0 !important;
+    }
+}

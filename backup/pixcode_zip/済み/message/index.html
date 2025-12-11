@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Message */
+#section-message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 60px 20px;
+    background-color: #fff;
+  }
+
+  .message-container {
+    width: 100%;
+    max-width: 1180px; /* Based on Figma root width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Gap calculated from Figma positions: Note Y(409) - Text Height(336) = 73px */
+    gap: 73px; 
+  }
+
+  .message-text-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .message-main-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #3d966c; /* style_3 */
+    font-size: 18px; /* Estimated for readability */
+    line-height: 2.2; /* Loose leading for elegant feel */
+    text-align: center;
+    margin: 0;
+    white-space: pre-wrap; /* Preserves the line breaks from Figma */
+  }
+
+  .message-note-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .note-box {
+    /* style_2 properties */
+    border: 2px solid #3d966c;
+    border-radius: 25px;
+    padding: 18px 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+    width: 100%;
+    max-width: 828px; /* From Figma Frame 116 width */
+    box-sizing: border-box;
+  }
+
+  .note-text {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: #3d966c; /* style_3 */
+    font-size: 14px; /* Slightly smaller than main text */
+    line-height: 1.8;
+    text-align: center;
+    margin: 0;
+    white-space: pre-wrap; /* Preserves line breaks */
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .message-container {
+      gap: 40px;
+    }
+
+    .message-main-text {
+      font-size: 16px;
+      line-height: 1.8;
+      white-space: normal; /* Allow natural wrapping on mobile */
+    }
+
+    .note-box {
+      padding: 15px;
+      border-radius: 15px;
+    }
+
+    .note-text {
+      font-size: 13px;
+      white-space: normal; /* Allow natural wrapping on mobile */
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-message">
+  <div class="message-container">
+    
+    <!-- Main Text Block -->
+    <div class="message-text-wrapper">
+      <p class="message-main-text">
+都立井の頭恩賜公園からほど近い、緑豊かで閑静な住宅地に、
+地域交流施設が併設された、次世代を担う若手クリエーター限定のシェアハウスがオープンします。
+創作活動が行える環境を備えたシェアハウスで、クリエーターが互いに刺激し合い、
+地域とつながりながら成長するスタートアップ支援の拠点です。
+クリエーターが地域と交流しながら、「共に創り、共に育てる」クリエイティブ・ヴィレッジをめざし、
+{暮らす} {つくる} {つながる} の３つの機能で、
+将来を担う皆さんの活動を支援し加速させます。ご参加をお待ちしています！
+      </p>
+    </div>
+
+    <!-- Note/Disclaimer Block -->
+    <div class="message-note-wrapper">
+      <div class="note-box">
+        <p class="note-text">
+この物件は公益目的のため、三鷹市が所有する土地・建物を貸主となる
+NPO法人ネットワーク大学推進機構が無償で借受、公的支援を受けて運営するものです。
+なお、物件に関するお問い合わせは、賃貸の仲介と管理を行う(有)北海商事となります。
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+</body>
+</html>

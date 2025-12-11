@@ -1,0 +1,122 @@
+html {
+  scroll-behavior: smooth; 
+}
+
+body {
+  font-family: 'Noto Sans JP';
+  margin: 0;
+  padding: 0;
+  color: #333;
+  box-sizing: border-box;
+  background-image: 
+    url('../img/catch.png'),
+    url('../img/bg_illustration.png'),
+    url('../img/bg_illustration.gif');
+  background-repeat: 
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position: 
+    2rem 4rem,
+    center top,
+    center top;
+  background-size: 
+    5rem auto,
+    cover,
+    70rem auto;
+  background-attachment:
+    fixed,
+    fixed,
+    fixed;
+  z-index: -10;
+}
+
+@media (max-width: 390px){
+  body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    background-image:
+      none,
+      none,
+      url('../img/bg_illustration.gif'); 
+
+    background-repeat:
+      no-repeat,
+      no-repeat,
+      no-repeat;
+
+    background-position:
+      center top,
+      center top,
+      center top;
+
+    background-size:
+      cover,
+      cover,
+      140%;
+
+    background-attachment:
+      fixed,
+      fixed,
+      fixed;
+  }
+}
+
+.noto-sans-jp {
+  font-family: "Noto Sans JP";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-feature-settings: "palt";
+  text-spacing-trim: normal;
+}
+
+.roboto-condensed {
+  font-family: "Roboto Condensed";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.josefin-sans-en-title {
+  font-family: "Josefin Sans";
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.syne {
+  font-family: "Syne";
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 767px) {
+  .hero-content-wrapper {
+    padding-right: 0; 
+  }
+}

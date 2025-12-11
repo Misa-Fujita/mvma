@@ -6,7 +6,6 @@ body {
   font-family: 'Noto Sans JP';
   margin: 0;
   padding: 0;
-  color: #333;
   box-sizing: border-box;
   background-image: 
     url('../img/catch.png'),
@@ -31,7 +30,8 @@ body {
   z-index: -10;
 }
 
-@media (max-width: 390px){
+/* スマホ */
+@media (max-width: 450px){
   body {
     text-align: center;
     margin: 0;
@@ -55,7 +55,7 @@ body {
     background-size:
       cover,
       cover,
-      140%;
+      120%;
 
     background-attachment:
       fixed,

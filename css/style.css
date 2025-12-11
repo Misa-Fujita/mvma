@@ -740,14 +740,16 @@ height: 21px;
 /* スマホ */
 @media (max-width: 450px) {
   .message-text-wrapper {
-    padding: 1.45rem 1rem 0 1rem; 
+    padding: 0 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
   }
 
   .message-main-text {
     font-size: 0.85em;
     line-height: 2;
-    letter-spacing: 0.03em; 
-    font-feature-settings: normal;
+    letter-spacing: 0.02em; 
     white-space: normal;
     word-break: break-word;
   }

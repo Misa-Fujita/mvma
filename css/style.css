@@ -745,7 +745,7 @@ height: 21px;
 
   .message-main-text {
     font-size: 0.85em;
-    line-height: 1.6;
+    line-height: 2;
     letter-spacing: 0.03em; 
     font-feature-settings: normal;
     white-space: normal;

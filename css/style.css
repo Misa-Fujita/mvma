@@ -828,7 +828,7 @@ margin-top: 0;
 .card-text {
 color: #3d966c;
 font-family: 'Noto Sans JP', sans-serif;
-font-size: 20px;
+font-size: 0.98rem;
 line-height: 1.75;
 text-align: justify;
 font-weight: 400;
@@ -931,7 +931,6 @@ font-family: 'Noto Sans JP', sans-serif;
 font-size: 1.75rem;
 font-weight: 700;
 color: #3d966c;
-/* 10px を 0.625rem に修正 */
 margin-top: 0.625rem; 
 }
 

@@ -178,127 +178,136 @@ background-color: rgba(255, 255, 255, 0.56);
   CSS for section section:Hero 
 ==================================== */
 #section-hero {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+width: 100%;
+display: flex;
+justify-content: center;
+margin: 0;
+padding: 0;
 }
 
 .hero-container {
-  width: 100%;
-  height: 100%;
-  max-width: 40rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0;
-  padding: 0 2rem 0 2rem;
-
+width: 100%;
+height: 100%;
+max-width: 40rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+margin: 0;
+padding: 0 2rem 0 2rem;
 }
 
 /* Badge */
 .hero-badge {
-margin: 2rem 0 1rem 0;
+margin: 2rem 0 1.3rem 0;
 }
+ 
 .hero-badge img {
-  width: 326px;
-  max-width: 100%;
-}
-.hero-badge img {
-  width: 14.5rem;
-  height: auto;
-  margin: 0 1rem;
+width: 14.5rem;
+height: auto;
+margin: 0 1rem;
 }
 
 /* Typography Colors */
-  .hero-subtitle,
-  .hero-title,
-  .hero-rent,
-  .hero-access {
-  color: #3d966c;
+.hero-subtitle,
+.hero-title,
+.hero-rent,
+.hero-access {
+color: #3d966c;
 }
 
 /* Subtitle */
-  .hero-subtitle {
-  font-size: 1.5em;
-  letter-spacing: 0.06em;
-  font-weight: 600;
-  margin: 0 0 0.3rem 0;
+.hero-subtitle {
+font-size: 1.6em;
+letter-spacing: 0.06em;
+font-weight: 500;
+margin: 0 0 0.5rem 0;
+position: relative;
+display: inline-block;
+padding-bottom: 0.1em;
 }
 
-/* Main Title */
-  .hero-title {
-  font-family: Noto Sans JP;
-  font-size: 5.4em;
-  font-weight: 700;
-  margin: 0 0 1rem 0;
-  letter-spacing: 0.4em;
-  gap: 0.3em;
-  position: relative; 
-  display: inline-block;
-  justify-content: center;
-  }
+.hero-subtitle::after {
+content: "";
+display: block;
+width: 100%;
+height: 1px;
+background-color: currentColor;  
+margin-top: 2px;                 
+}
 
-  .hero-title-last {
-  letter-spacing: 0.15em;
-  }
+
+/* Main Title */
+.hero-title {
+font-family: Noto Sans JP;
+font-size: 5.4em;
+font-weight: 700;
+margin: 0 0 1rem 0;
+letter-spacing: 0.4em;
+gap: 0.3em;
+position: relative; 
+display: inline-block;
+justify-content: center;
+}
+
+.hero-title-last {
+letter-spacing: 0.15em;
+}
 
 /* Rent */
-  .hero-rent {
-  font-size: 28px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  margin: 0 0 10px 0;
-  }
-  .rent-note {
-  font-size: 0.8em;
-  }
+.hero-rent {
+font-size: 28px;
+font-weight: 600;
+letter-spacing: 0.04em;
+margin: 0 0 10px 0;
+}
+.rent-note {
+font-size: 0.8em;
+}
 
 /* Access */
 .hero-access {
-  font-size: 1.25em;
-  font-weight: 400;
-  margin: 0 0 1.24rem 0;
-  letter-spacing: 0.04em;
-  }
+font-size: 1.25em;
+font-weight: 400;
+margin: 0 0 1.24rem 0;
+letter-spacing: 0.04em;
+}
 
 /* Setsumeikai Block */
-  .setsumeikai-hero-block {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  margin-bottom: 1.56rem;
-  }
+.setsumeikai-hero-block {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;
+margin-bottom: 1.56rem;
+}
 
-  .setsumeikai-date {
-  font-size: 28px;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
-  }
+.setsumeikai-date {
+font-size: 28px;
+font-weight: 600;
+color: #333;
+margin: 0;
+}
 
-  .setsumeikai-venue-link-hero {
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-  gap: 8px;
-  font-size: 1em;
-  color: #333;
-  font-weight: 400;
-  text-decoration: underline;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
-  }
-  .setsumeikai-venue-link:hover {
-  border-bottom-color: #040404;
-  }
-  .setsumeikai-icon-link {
-  width: 22px;
-  height: 21px;
-  }
+.setsumeikai-venue-link-hero {
+display: flex;
+align-items: center;
+margin: 0 auto;
+gap: 8px;
+font-size: 1em;
+color: #333;
+font-weight: 400;
+text-decoration: underline;
+border-bottom: 1px solid transparent;
+transition: border-color 0.2s;
+}
+.setsumeikai-venue-link:hover {
+border-bottom-color: #040404;
+}
+.setsumeikai-icon-link {
+width: 22px;
+height: 21px;
+}
 
 /* Setsumeikai CTA Button */
   .setsumeikai-cta-wrapper {
@@ -340,12 +349,6 @@ margin: 2rem 0 1rem 0;
     max-width: 100%;
     width: 100%;
     min-width: auto;   
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.4rem;
   }
 
   .setsumeikai-hero-block {
@@ -401,6 +404,10 @@ margin: 2rem 0 1rem 0;
   font-size: 3.1em;
   letter-spacing: 0.2em;
   }
+
+  .hero-subtitle {
+  font-size: 1em;
+}
 
   .hero-rent {
     font-size: 1rem;

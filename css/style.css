@@ -748,7 +748,7 @@ height: 21px;
 
   .message-main-text {
     font-size: 0.85em;
-    line-height: 4;
+    line-height: 2.4;
     letter-spacing: 0.02em; 
     white-space: normal;
     word-break: break-word;
@@ -777,7 +777,7 @@ height: 21px;
 }
 
 .points-container {
-  max-width: 60rem;
+  max-width: 56rem;
   margin: 0 auto; 
   display: flex;
   flex-direction: row;
@@ -858,7 +858,7 @@ font-weight: 400;
 
 .points-container {
     flex-direction: column;
-    padding: 0 1.75rem 0 1.75rem;
+    padding: 0 2rem 0 2rem;
     gap: 2rem;       
     align-items: center;
   }

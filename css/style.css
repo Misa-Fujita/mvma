@@ -104,10 +104,10 @@ background-color: rgba(255, 255, 255, 0.56);
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) {
+@media (min-width: 768px) {
   .header-nav {
     display: block !important;
-    position: static !important; /* ナビがずれて消えるのを防ぐ */
+    position: static !important; 
   }
 
   .nav-list {
@@ -577,8 +577,8 @@ height: 21px;
   font-weight: 400;
 }
 
-/* Responsive Adjustments */
-@media (min-width: 451px) {
+/* PC・タブレット */
+@media (min-width: 768px) {
   .openhouse-container {
     align-items: center;
   }
@@ -587,17 +587,17 @@ height: 21px;
     width: 100%;
     height: auto;
     margin-left: 0;
-    overflow: hidden; /* Clip the fixed-width SVG header on small screens */
+    overflow: hidden; 
   }
   
-  .header-visuals {
+  /* .header-visuals {
     width: 100%;
     max-width: 862px;
     height: auto;
     transform-origin: top center;
     transform: scale(0.8); 
     margin: 0 auto;
-  }
+  } */
 
   .openhouse-body {
     margin-left: 0;
@@ -737,16 +737,16 @@ height: 21px;
   white-space: pre-wrap;
 }
 
-/* Responsive Adjustments */
-@media (min-width: 451px) {
+/* スマホ */
+@media (max-width: 450px) {
   .message-container {
     padding: 1.45rem 1.45rem 0 1.45rem;
   }
 
   .message-main-text {
-    font-size: 0.9em;
-    line-height: 1.8;
-    white-space: normal; /* Allow natural wrapping on mobile */
+    font-size: 0.8em;
+    line-height: 1.4;
+    white-space: normal; 
   }
 
   .note-box {
@@ -830,7 +830,7 @@ font-weight: 400;
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) {
+@media (min-width: 768px) {
   .points-container {
     gap: 3rem; 
   }
@@ -939,7 +939,7 @@ gap: 3rem;
 }
 
 /*PC・タブレット*/
-@media (min-width: 451px) {
+@media (min-width: 768px) {
 .awesome-grid {
   grid-template-columns: repeat(3, 1fr);
 }
@@ -1118,7 +1118,7 @@ font-weight: 400;
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) { 
+@media (min-width: 768px) { 
 .outline-row {
   flex-direction: column;
   padding: 1.25rem 0; 
@@ -1346,7 +1346,7 @@ height: auto;
 }
 
 /* Responsive Adjustments */
-@media (min-width: 451px) {
+@media (min-width: 768px) {
 .rooms-title {
   font-size: 24px;
 }
@@ -1529,7 +1529,7 @@ text-align: center;
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) {
+@media (min-width: 768px) {
 .description-section {
 padding: 40px 15px;
 }
@@ -1702,7 +1702,7 @@ margin-top: 4px;
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) {
+@media (min-width: 768px) {
   .howto-section {
     padding: 60px 20px;
   }
@@ -2130,7 +2130,7 @@ font-weight: bold;
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) { 
+@media (min-width: 768px) { 
   
   .step-item {
     flex-direction: column;
@@ -2519,7 +2519,7 @@ padding-top: 3rem;
 }
 
 /* PC・タブレット */
-@media (min-width: 451px) { 
+@media (min-width: 768px) { 
     .cta-fixed-img {
         box-shadow: none;
         display: flex;

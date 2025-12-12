@@ -1637,9 +1637,9 @@ background: #fff;
 
 /* Timeline */
 .flow-timeline-wrapper {
-width: 120rem;
+width: 52rem;
 margin: 0 auto;
-padding: 3.75rem 2rem 1rem 2rem;
+padding: 3.75rem 2rem 3rem 2rem;
 text-align: center;
 }
 
@@ -1691,7 +1691,6 @@ margin-bottom: 20px;
 /* ==================================== */
 #section-howto {
 width: 100%;
-background-color: #d2f1cc;
 color: #3d966c;
 }
 
@@ -1752,6 +1751,7 @@ margin: 0 0 24px 0;
 .howto-description p:last-child {
 margin-bottom: 0;
 }
+
 
 /* ==================================== */
 /* CSS for section section:HowToView */
@@ -1875,8 +1875,8 @@ flex-grow: 1;
 padding: 0.2rem 1.75rem 0 1.75rem;
 }
 
-.step-title {
-font-size: 22px;
+.step-title-howtoview {
+font-size: 1.6rem;
 font-weight: 700;
 color: #3d966c;
 margin: 0 0 10px 0;
@@ -1886,16 +1886,19 @@ flex-wrap: wrap;
 gap: 10px;
 }
 
-.step-note {
+.step-note-howtoview {
+color: #3d966c;
 font-size: 0.9em;
 font-weight: 500;
 }
 
-.step-date {
+.step-date-howtoview {
 text-align: left;
+display: flex;
+justify-content: left;
 font-size: 1em;
-color: #333;
-margin: 0.5rem 0 1.4rem 0;
+color: #3d966c;
+margin: 0.5rem 0 1rem 0;
 font-weight: 500;
 }
 
@@ -1914,11 +1917,18 @@ width: 22px;
 height: 22px;
 }
 
-.step-desc {
+.step-desc-howtoview {
 text-align: left;
 font-size: 1.2em;
 color: #333;
 margin: 0;
+}
+
+.step-desc-howtoview2 {
+text-align: left;
+font-size: 1.2em;
+color: #333;
+margin: 1rem 0 1rem 0;
 }
 
 .setsumeikai-btn-howto-view {
@@ -1946,6 +1956,19 @@ background-color: #3f3f3f;
 color: #fffc;       
 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 transform: translateY(-2px);
+}
+
+.setsumeikai-venue-link-howtoview {
+display: flex;
+align-items: center;
+margin: 0 auto;
+gap: 8px;
+font-size: 1em;
+color: #3d966c;
+font-weight: 400;
+text-decoration: underline;
+border-bottom: 1px solid transparent;
+transition: border-color 0.2s;
 }
 
 /* Sub Section (Step 02) */
@@ -2043,22 +2066,22 @@ height: 0.9em;
 }
 
 /* Info Box */
-.info-box {
-background-color: rgba(30, 81, 57, 0.15);
-margin: 0.4rem 1.6rem 0 1.6rem;
-padding: 0.625rem 1.25rem;
+.info-box-hotoview {
+width: 48rem;
+height: 2.5rem;
+background-color: rgb(189, 215, 202);
 border-radius: 0.5625rem;
 display: flex;
 align-items: center;
 justify-content: center;
-text-align: center;
+text-align: left;
 }
 
-.info-box p {
+.info-box-text {
 margin: 0;
 color: #3d966c;
-font-size: 0.9em;
-font-weight: 500;
+font-size: 1em;
+font-weight: 400;
 letter-spacing: 0.1em;
 font-feature-settings: "palt";
 }

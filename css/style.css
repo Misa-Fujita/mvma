@@ -1,3 +1,113 @@
+/* ==================================== */
+/* CSS for CTA Button */
+/* ==================================== */
+.button-wrapper {
+position: relative;
+display: inline-block;
+width: 54rem;
+height: 6.8rem;
+}
+
+.button-main {
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #000;
+text-decoration: none;
+z-index: 2;
+box-sizing: border-box; 
+transition: transform 0.2s ease;
+}
+
+.button-shadow {
+position: absolute;
+top: 10px;       
+left: 10px;
+width: 100%;
+height: 100%;
+background: #ccc;
+z-index: 1;
+}
+
+.button-main:hover {
+transform: translate(2px, 2px);
+}
+
+.button-content {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  white-space: nowrap;
+}
+
+.button-icon {
+width: 1.4rem;
+height: auto;
+vertical-align: middle;
+margin-top: -0.1rem;
+}
+
+.button-text-group {
+display: flex;
+flex-direction: row;
+align-items: center; 
+gap: 0.4rem;
+}
+
+.button-text-primary {
+font-size: 1.2rem;
+color: #fff;
+font-weight: 600;
+letter-spacing: 0.05em;
+}
+
+.button-text-secondary {
+font-size: 0.9em; 
+font-weight: 400;
+color: rgba(255, 255, 255, 0.9);
+letter-spacing: 0.1em;
+margin-top: 4px; 
+}
+
+/* PC・タブレット */
+@media (min-width: 768px) {
+  .howto-section {
+    padding: 60px 20px;
+  }
+
+  .title-jp {
+    font-size: 24px;
+  }
+
+  .button-wrapper {
+    height: auto;
+    /* min-height: 92px; */
+  }
+
+  .button-main {
+    padding: 20px;
+  }
+
+  .button-content {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .button-text-secondary {
+    font-size: 12px;
+  }
+  
+  /* Adjust shadow for responsive height */
+  .button-shadow {
+    height: 100%;
+  }
+}
+
+
 /* ====================================
   CSS for section section:Header
 ==================================== */
@@ -1430,7 +1540,7 @@ margin-bottom: 0.4rem;
 .jp-title {
 font-size: 32px;
 color: #3d966c;
-font-weight: 700;
+font-weight: 600;
 letter-spacing: 0.05em;
 margin: 0;
 }
@@ -1525,8 +1635,9 @@ text-align: center;
 background: #fff;
 }
 
+/* Timeline */
 .flow-timeline-wrapper {
-max-width: 72rem;
+width: 120rem;
 margin: 0 auto;
 padding: 3.75rem 2rem 1rem 2rem;
 text-align: center;
@@ -1536,6 +1647,7 @@ text-align: center;
 @media (min-width: 768px) {
 .description-section {
 padding: 40px 15px;
+}
 }
 
 .jp-title {
@@ -1572,7 +1684,6 @@ padding: 20px 15px;
 color: #3d966c;
 font-size: 20px;
 margin-bottom: 20px;
-}
 }
 
 /* ==================================== */
@@ -1642,104 +1753,6 @@ margin: 0 0 24px 0;
 margin-bottom: 0;
 }
 
-/* Button Component Styles */
-.button-wrapper {
-position: relative;
-width: 100%;
-max-width: 43rem;
-height: 4.45rem;
-}
-
-.button-main {
-position: relative;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 100%;
-background-color: #000000;
-text-decoration: none;
-z-index: 2;
-transition: transform 0.2s ease;
-}
-
-.button-shadow {
-position: absolute;
-top: 10px;
-left: 10px;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.2);
-z-index: 1;
-}
-
-.button-main:hover {
-transform: translate(2px, 2px);
-}
-
-.button-content {
-display: flex;
-align-items: center;
-justify-content: center;
-gap: 20px;
-color: #fff;
-}
-
-.button-icon {
-width: 28px;
-height: 27px;
-object-fit: contain;
-}
-
-.button-text-primary {
-font-size: 20px; 
-font-weight: 700;
-letter-spacing: 0.05em;
-}
-
-.button-text-secondary {
-font-size: 0.9em; 
-font-weight: 400;
-color: rgba(255, 255, 255, 0.9);
-letter-spacing: 0.1em;
-margin-top: 4px; 
-}
-
-/* PC・タブレット */
-@media (min-width: 768px) {
-  .howto-section {
-    padding: 60px 20px;
-  }
-
-  .title-jp {
-    font-size: 24px;
-  }
-
-  .button-wrapper {
-    height: auto;
-    min-height: 92px;
-  }
-
-  .button-main {
-    padding: 20px;
-  }
-
-  .button-content {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  .button-text-secondary {
-    font-size: 12px;
-  }
-  
-  /* Adjust shadow for responsive height */
-  .button-shadow {
-    height: 100%;
-  }
-}
-
 /* ==================================== */
 /* CSS for section section:HowToView */
 /* ==================================== */
@@ -1799,7 +1812,7 @@ margin: 0 auto 20px auto;
 .jp-title-w {
 font-size: 32px;
 color: #fafafa;
-font-weight: 700;
+font-weight: 600;
 letter-spacing: 0.05em;
 margin: 0;
 }
@@ -1813,13 +1826,13 @@ color: #3d966c;
 }
 
 /* Timeline */
-.timeline {
+.timeline-howtoview {
 width: 100%;
-max-width: 32rem;
+max-width: 52rem;
 margin: 0 auto;
 padding: 0;
 gap: 2.5rem;
-margin-bottom: 5rem;
+margin-bottom: 2rem;
 }
 
 .step-item {
@@ -1902,8 +1915,9 @@ height: 22px;
 }
 
 .step-desc {
-font-size: 0.9em;
-color: #3d966c;
+text-align: left;
+font-size: 1.2em;
+color: #333;
 margin: 0;
 }
 
@@ -2522,8 +2536,9 @@ padding-top: 3rem;
   transform: translateY(calc(-80% - 3%));
 }
 
-/* PC・タブレット */
-@media (min-width: 768px) { 
+
+/* スマホ */
+@media (max-width: 450px) { 
     .cta-fixed-img {
         box-shadow: none;
         display: flex;

@@ -1538,7 +1538,7 @@ margin-bottom: 0.4rem;
 }
 
 .jp-title {
-font-size: 32px;
+font-size: 1.75rem;
 color: #3d966c;
 font-weight: 600;
 letter-spacing: 0.05em;
@@ -1651,7 +1651,7 @@ padding: 40px 15px;
 }
 
 .jp-title {
-font-size: 24px;
+font-size: 1.75rem;
 }
 
 .desc-text {
@@ -1810,7 +1810,7 @@ margin: 0 auto 20px auto;
 }
 
 .jp-title-w {
-font-size: 32px;
+font-size: 1.75rem;
 color: #fafafa;
 font-weight: 600;
 letter-spacing: 0.05em;

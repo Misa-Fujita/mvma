@@ -1,12 +1,17 @@
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
+  box-sizing: border-box; /* HTML要素にborder-boxを設定 */
+ 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit; 
 }
 
 body {
   font-family: 'Noto Sans JP';
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   background-image: 
     url('../img/catch.png'),
     url('../img/bg_illustration.png'),
@@ -32,35 +37,12 @@ body {
 
 /* スマホ */
 @media (max-width: 450px){
-  body {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
-    background-image:
-      none,
-      none,
-      url('../img/bg_illustration.gif'); 
-
-    background-repeat:
-      no-repeat,
-      no-repeat,
-      no-repeat;
-
-    background-position:
-      center top,
-      center top,
-      center top;
-
-    background-size:
-      cover,
-      cover,
-      120%;
-
-    background-attachment:
-      fixed,
-      fixed,
-      fixed;
+    body {
+    background-image: url('../img/bg_illustration.gif');
+    background-repeat: no-repeat;
+    background-position: center 3.2rem;
+    background-size: 110% auto; 
+    background-attachment: scroll;
   }
 }
 
@@ -115,7 +97,7 @@ ul {
   padding: 0;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 764px) {
   .hero-content-wrapper {
     padding-right: 0; 
   }

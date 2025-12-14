@@ -2827,27 +2827,26 @@ background-repeat: no-repeat;
   position: fixed;
   right: 0; 
   top: 50%;
-  transform: translateY(-70%);
+  transform: translateY(-80%);
   box-shadow: 4px 8px rgba(0, 0, 0, 0.2);
   transition: all 0.1s ease-out; 
   z-index: 999; 
 }
 
 .cta-fixed-img:hover {
-  transform: translateY(calc(-70% - 3%));
+  transform: translateY(calc(-80% - 3%));
 }
 
 
 /* スマホ */
 @media (max-width: 450px) { 
     .cta-fixed-img {
-      box-shadow: none;
-      display: flex;
-      justify-content: flex-end;
+        box-shadow: none;
+        display: flex;
+        justify-content: flex-end;
     }
     .cta-fixed-img img {
-      width: 55%;
-      height: auto;
-      margin: 0 !important;
+        width: 55%;
+        margin: 0 !important;
     }
 }

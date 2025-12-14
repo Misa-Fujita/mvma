@@ -562,10 +562,11 @@ height: 21px;
 .openhouse-subtitle {
   font-family: "Josefin Sans";
   font-size: 2.4em;
-  font-weight: 300;
+  font-weight: 340;
+  line-height: 1.3;
   color: #3d966c;
   text-align: center;
-  margin: 0 0 0.2rem 0;
+  margin: 0.6rem 0 0.2rem 0;
 }
 
 .openhouse-content {
@@ -881,6 +882,11 @@ font-feature-settings: "palt";
   padding: 0 0.3em;
 }
 
+.pc-br {
+  display: block;
+  height: 0;
+}
+
 .message-note-wrapper {
   width: 100%;
   display: flex;
@@ -911,27 +917,32 @@ font-feature-settings: "palt";
 
 /* スマホ */
 @media (max-width: 450px) {
+  #section-concept {
+    padding: 1rem 2rem;
+  }
   .message-container {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0 2rem 0 2rem;
-    gap: 2rem;       
     align-items: center;
   }
   .message-text-wrapper {
-    /* padding: 0 1rem; */
     box-sizing: border-box;
     width: 100%;
     max-width: 100%;
+    margin-bottom: 2rem;
   }
   .message-main-text {
     text-align: justify;
     font-size: 0.85em;
-    line-height: 2.4;
+    line-height: 2;
     letter-spacing: 0.02em; 
-    white-space: normal;
     word-break: break-word;
+    margin: 0;
+  }
+  .sp-only-br {
+    display: block;
+    height: 1.5em;
   }
   .message-note-wrapper {
     width: 100%;
